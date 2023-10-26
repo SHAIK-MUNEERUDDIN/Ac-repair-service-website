@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins:wght@600&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+}
+
+nav {
+    background: #0082e6;
+    height: 8rem;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.4s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    animation: 0.95s ease 0s normal forwards 1 running slideDown;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background: #1b9bff;
+    transition: .5s;
+    color: white;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.header-top {
+    width: 100%;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.header-top-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+
+.header-top-list li i {
+    padding: 0 0.5rem;
+}
+
+.ht-item .phone {
+    color: white;
+    background-color: green;
+    padding: 4px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.ht-item .phone:hover {
+    background-color: red;
+}
+
+.ht-item .mail {
+    font-size: 2rem;
+    background: none;
+}
+
+.appointment-btn {
+    color: black;
+    background-color: yellow;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0px #807c7c;
+}
+
+.appointment-btn:hover {
+    color: white;
+    background: #1b9bff;
+}
+
+#hero-section {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 130px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+#hero-section::before {
+    content: "";
+    background: url(/assets/images/ac-repair-banner.jpg) no-repeat center center/cover;
+    height: calc(100vh - 100px);
+    width: 100%;
+    top: -5px;
+    left: 0;
+    position: absolute;
+    z-index: -99;
+
+}
+
+/* .intro-text h1 {
+    margin: 2rem 0;
+    font-size: 4rem;
+} */
+
+.hero-content h1 {
+    margin-bottom: 5rem;
+    font-size: 5rem;
+}
+
+.book-service-btn {
+    color: #1b9bff;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 10px 0px #807c7c; */
+}
+
+.book-service-btn:hover {
+    color: white;
+    background-color: #1b9bff;
+}
+
+.heading {
+    width: 100%;
+    padding-top: 10rem;
+}
+
+.heading h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading-col-1 {
+    color: #1b9bff;
+}
+
+.heading-col-2 {
+    color: #ffff;
+}
+
+.intro-content p {
+    font-size: 2rem;
+    padding: 3rem;
+    text-align: justify;
+}
+
+.intro-card {
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.intro-card-img {
+    width: max-content;
+    height: max-content;
+}
+
+.intro-card-img img {
+    width: 42rem;
+    height: 55rem;
+    border-radius: 1rem;
+}
+
+.heading-2 {
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.heading-2 h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.heading-2-col-1 {
+    color: rgb(55, 138, 32);
+}
+
+.heading-2-col-2 {
+    color: #d547b8;
+}
+
+#intro-content-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.ic2-card-wrapper {
+    width: 100%;
+    margin: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-evenly;
+}
+
+.ic2-card {
+    display: flex;
+}
+
+.ic2-media {
+    width: 10rem;
+    height: 10rem;
+}
+
+.ic2-media img {
+    width: 100%;
+    height: 100%;
+}
+
+.ic2-caption {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    /* color: #3e3737; */
+    padding: 1rem;
+}
+
+#About-us {
+    height: 100rem;
+    /* background-color: #269fff; */
+    background-color: #F8F8F8;
+}
+
+.about-wrapper {
+    padding: 4rem;
+}
+
+.about-content {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+}
+
+
+.vision-wrapper {
+    background-color: #a2defbbd;
+    height: 100%;
+    min-height: 65rem;
+    overflow: hidden;
+}
+
+.vision-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.vision-container::before {
+    content: "";
+    background: url(./assets/images/abstract-shape3.png) no-repeat center center/cover;
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    top: -133px;
+    z-index: -1;
+    left: 0;
+}
+
+.vision-container::after {
+    content: "";
+    background: url(./assets/images/abstract-shape2.png) no-repeat center center/cover;
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    top: 30rem;
+    z-index: -1;
+    right: -1rem;
+}
+
+.vision-content {
+    font-size: 1.8rem;
+    width: 60rem;
+    border: 2px solid #ff76e3;
+    padding: 1rem 3rem;
+    text-align: justify;
+    color: #131d3b;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 99;
+    background-color: #a2defb33;
+}
+
+.vision-content p {
+    margin-bottom: 1rem;
+}
+
+
+.vision-media {
+    flex: 0 0 auto;
+    width: 53rem;
+    height: 38rem;
+    border-bottom: 1.5rem solid #ff76e3;
+    border-radius: 1rem;
+
+}
+
+
+
+.vision-media img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.consider-cards-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.consider-card {
+    width: 35rem;
+    height: 17rem;
+    border: 2px solid;
+    padding: 2rem;
+    background-color: #3a77d7e0;
+    color: white;
+    margin: 2rem;
+}
+
+.consider-heading-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.consider-media {
+    width: 4rem;
+    height: 4rem;
+    margin: 0px 1rem;
+}
+
+.consider-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4rem;
+}
+
+.consider-heading {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.consider-content {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    letter-spacing: 0.4px;
+}
+
+
+/* section {
+    background: url(/assets/images/ac-repair-banner.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    height: 100vh;
+} */
+
+
+@keyframes slideDown {
+    0% {
+        margin-top: -90px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
