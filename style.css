@@ -225,6 +225,8 @@ nav ul li a {
 .heading-2 {
     width: 100%;
     padding-top: 5rem;
+    position: relative;
+    z-index: 99;
 }
 
 .heading-2 h1 {
@@ -305,18 +307,42 @@ nav ul li a {
     height: 100%;
     min-height: 65rem;
     overflow: hidden;
+    position: relative;
 }
+
+/* styling for background of vision section begins here */
+.custom-shape-divider-top-1698319711 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1698319711 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 183px;
+}
+
+.custom-shape-divider-top-1698319711 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* styling for background of vision section ends here */
 
 .vision-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 7rem;
     position: relative;
     z-index: 1;
 }
 
-.vision-container::before {
+/* .vision-container::before {
     content: "";
     background: url(./assets/images/abstract-shape3.png) no-repeat center center/cover;
     position: absolute;
@@ -325,9 +351,9 @@ nav ul li a {
     top: -133px;
     z-index: -1;
     left: 0;
-}
+} */
 
-.vision-container::after {
+/* .vision-container::after {
     content: "";
     background: url(./assets/images/abstract-shape2.png) no-repeat center center/cover;
     position: absolute;
@@ -336,7 +362,7 @@ nav ul li a {
     top: 30rem;
     z-index: -1;
     right: -1rem;
-}
+} */
 
 .vision-content {
     font-size: 1.8rem;
@@ -425,12 +451,6 @@ nav ul li a {
 }
 
 
-/* section {
-    background: url(/assets/images/ac-repair-banner.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-    height: 100vh;
-} */
 
 
 @keyframes slideDown {
