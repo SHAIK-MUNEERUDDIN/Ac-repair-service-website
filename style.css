@@ -503,7 +503,7 @@ nav ul li a {
 
 
 .slide-track {
-    animation: scroll 60s linear infinite;
+    animation: scroll 30s linear infinite;
     display: flex;
     width: calc(27rem * 12);
     height: inherit;
