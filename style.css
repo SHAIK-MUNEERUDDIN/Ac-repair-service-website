@@ -5,6 +5,7 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    transition: all 0.2s linear;
 }
 
 html {
@@ -167,7 +168,7 @@ nav ul li a {
     font-size: 5rem;
 }
 
-.book-service-btn {
+.book-service-button {
     color: #1b9bff;
     background-color: white;
     padding: 1rem;
@@ -175,14 +176,14 @@ nav ul li a {
     /* box-shadow: 3px 3px 10px 0px #807c7c; */
 }
 
-.book-service-btn:hover {
+.book-service-button:hover {
     color: white;
     background-color: #1b9bff;
 }
 
 .heading {
     width: 100%;
-    padding-top: 10rem;
+    padding-top: 7rem;
 }
 
 .heading h1 {
@@ -282,10 +283,10 @@ nav ul li a {
     padding: 1rem;
 }
 
-#About-us {
+#About {
+    padding-top: 10rem;
     height: 100%;
     background-color: #F8F8F8;
-    padding-top: 7rem;
 }
 
 .about-wrapper {
@@ -468,7 +469,7 @@ nav ul li a {
     display: flex;
     height: 15rem;
     justify-content: center;
-    margin-top: 3rem;
+    margin: 3rem 0 8rem;
 }
 
 .slider {
@@ -510,6 +511,10 @@ nav ul li a {
     align-items: center;
 }
 
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
 .slide {
     flex-shrink: 0;
     height: 14rem;
@@ -524,12 +529,105 @@ nav ul li a {
 
 /* styling for our brands ends here */
 
+/* styling for services section begins here */
+
+#Services {
+    width: 100%;
+    height: 100%;
+    padding-top: 6rem;
+}
+
+.services-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.service-card {
+    height: 58rem;
+    width: 37rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ea2380c7;
+    color: white;
+    margin: 3rem 1rem;
+}
+
+.service-media {
+    width: 37rem;
+    height: 25rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.service-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-media:hover img {
+    transform: scale(1.1);
+}
+
+
+.service-content-box {
+    padding: 1rem;
+    height: 25rem;
+}
+
+.service-name {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem 0 0;
+}
+
+.service-info {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.service-book {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.book-service-btn {
+    color: #1b9bff;
+    background-color: white;
+    box-shadow: 3px 3px 10px 0px #807c7c;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.7rem;
+}
+
+.book-service-btn:hover {
+    color: white;
+    background-color: #1b9bff;
+}
+
+/* styling for services section ends here */
+
+
+
+
+
 
 
 
 @keyframes slideDown {
     0% {
-        margin-top: -90px;
+        margin-top: -9rem;
     }
 
     100% {
