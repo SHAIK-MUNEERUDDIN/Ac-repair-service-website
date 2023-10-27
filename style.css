@@ -474,7 +474,7 @@ nav ul li a {
 .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 20rem;
+    height: 18rem;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -501,16 +501,18 @@ nav ul li a {
     top: 0;
 }
 
+
 .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 60s linear infinite;
     display: flex;
+    width: calc(27rem * 12);
     height: inherit;
     align-items: center;
 }
 
 .slide {
     flex-shrink: 0;
-    height: 15rem;
+    height: 14rem;
     width: 27rem;
     margin: 0px 1rem;
 }
@@ -536,12 +538,13 @@ nav ul li a {
 }
 
 
+
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(13rem);
     }
 
     100% {
-        transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-23rem * 10));
     }
 }
