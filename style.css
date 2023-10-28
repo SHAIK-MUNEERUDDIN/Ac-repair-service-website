@@ -509,6 +509,7 @@ nav ul li a {
     width: calc(27rem * 12);
     height: inherit;
     align-items: center;
+    cursor: pointer;
 }
 
 .slide-track:hover {
@@ -603,7 +604,7 @@ nav ul li a {
 .book-service-btn {
     color: #1b9bff;
     background-color: white;
-    box-shadow: 3px 3px 10px 0px #807c7c;
+    box-shadow: 3px 3px 10px 0px #2f2b2b;
     width: 100%;
     text-align: center;
     font-size: 2rem;
@@ -614,6 +615,7 @@ nav ul li a {
 .book-service-btn:hover {
     color: white;
     background-color: #1b9bff;
+    box-shadow: none;
 }
 
 /* styling for services section ends here */
