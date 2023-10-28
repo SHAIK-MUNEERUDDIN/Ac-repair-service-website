@@ -535,7 +535,7 @@ nav ul li a {
 #Services {
     width: 100%;
     height: 100%;
-    padding-top: 6rem;
+    padding-top: 10rem;
 }
 
 .services-wrapper {
@@ -556,13 +556,14 @@ nav ul li a {
     background-color: #ea2380c7;
     color: white;
     margin: 3rem 1rem;
+    padding: 0.5rem;
 }
 
 .service-media {
-    width: 37rem;
+    width: 36rem;
     height: 25rem;
-    padding: 0.3rem;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .service-media img {
@@ -577,7 +578,7 @@ nav ul li a {
 
 
 .service-content-box {
-    padding: 1rem;
+    padding: 0.5rem;
     height: 25rem;
 }
 
