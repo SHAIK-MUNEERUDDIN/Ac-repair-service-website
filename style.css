@@ -621,8 +621,239 @@ nav ul li a {
 
 /* styling for our brands ends here */
 
+/* Contact section styling begins here */
+
+#contact-us {
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-main {
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.contact-card {
+    width: 27rem;
+    height: 18rem;
+    padding: 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0.2rem 0.2rem 0.8rem #00000080;
+}
+
+.contact-card img {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-content {
+    height: 12rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ph-no {
+    color: green;
+}
+
+.contact-card-btn {
+    color: white;
+    background-color: #0082e6;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+    font-size: 1.8rem;
+    box-shadow: 2px 2px 5px 0px #807c7c;
+}
+
+.contact-card-btn:hover {
+    background-color: #0091ff;
+    box-shadow: none;
+}
 
 
+
+
+
+.contact {
+    background: #e5f7fb;
+    min-height: 55vh;
+    padding-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.contact .container {
+    max-width: 1050px;
+    width: 100%;
+    background: #fff;
+    border-radius: 1.5rem;
+    margin: 4rem auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2rem;
+}
+
+.contact .content .contact-media {
+    max-width: 60%;
+    margin-left: 4rem;
+}
+
+.contact .content .contact-media img {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+}
+
+.contact .content form {
+    width: 45%;
+    margin-right: 3.5rem;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group .field {
+    height: 50px;
+    display: flex;
+    position: relative;
+    margin: 1rem;
+    width: 100%;
+}
+
+form i {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: rgb(51, 51, 51);
+    font-size: 20px !important;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field input,
+form .field select,
+form .message textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 16px 0 48px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    background: #e5f7fb;
+}
+
+.field input::placeholder,
+.field select::placeholder,
+.message textarea::placeholder {
+    color: rgb(51, 51, 51);
+}
+
+.field input:focus,
+.field select:focus,
+.message textarea:focus {
+    padding-left: 47px;
+    border: 2px solid #d547b8;
+}
+
+.field input:focus~i,
+.message textarea:focus~i {
+    color: #d547b8;
+}
+
+form .message {
+    position: relative;
+    margin: 1rem;
+    width: 100%;
+}
+
+form .message i {
+    top: 25px;
+    font-size: 20px;
+    left: 15px;
+}
+
+form .message textarea {
+    min-height: 130px;
+    max-height: 230px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 12px 20px 0 48px;
+}
+
+form .message textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+form .button-area {
+    display: flex;
+    width: 100%;
+    margin-left: 1rem;
+    /* flex-direction: row-reverse;
+            float: right; */
+}
+
+.button-area button {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 13px 25px;
+    background: #d547b8;
+    box-shadow: 0px 5px 10px #8c898c;
+    transition: 0.3s ease;
+    font-family: "Nunito", sans-serif;
+    margin: 0 auto;
+}
+
+.button-area button:hover {
+    background: #ff00bff5;
+}
+
+.button-area span {
+    font-size: 17px;
+    padding: 1rem;
+    display: none;
+}
+
+.button-area button i {
+    position: relative;
+    top: 6px;
+    left: 2px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.button-area button:hover i {
+    left: 8px;
+}
+
+
+
+/* Contact section styling ends here */
 
 
 
