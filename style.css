@@ -200,6 +200,12 @@ nav ul li a {
     color: #ffff;
 }
 
+#intro {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .intro-content p {
     font-size: 2rem;
     padding: 3rem;
@@ -624,9 +630,13 @@ nav ul li a {
 /* Contact section styling begins here */
 
 #contact-us {
-    padding: 4rem;
+    padding-top: 10rem;
     width: 100%;
     height: 100%;
+}
+
+.contact-us-wrapper {
+    padding: 4rem;
 }
 
 .contact-main {
