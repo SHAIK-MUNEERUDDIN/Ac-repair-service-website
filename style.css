@@ -891,7 +891,7 @@ form .button-area {
     position: relative;
     background: url(./assets/images/expert-air-conditioning-testimonials-bg.jpg);
     padding: 5rem 0;
-    margin-top: 4rem;
+    margin: 5rem 0;
     background-position: center;
     background-size: cover;
 }
@@ -969,7 +969,7 @@ form .button-area {
     bottom: 6rem;
     left: 0;
     display: block;
-    z-index: 3333;
+    z-index: 9;
     height: 1.5rem;
 }
 
@@ -1069,6 +1069,135 @@ form .button-area {
 
 /*-----Testimonial section styling ends here-------*/
 
+/* footer section begins here */
+
+.map {
+    width: 100%;
+    height: 30rem;
+}
+
+.footer {
+    min-height: auto;
+    padding-top: 5rem;
+    background-color: #3a77d7e0;
+    text-transform: capitalize;
+}
+
+.footer .footer-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .footer-box .box {
+    flex: 1 1 25rem;
+    margin: 2.5rem;
+}
+
+.footer .footer-box .box h3 {
+    font-size: 2.5rem;
+    color: #eee;
+    padding-bottom: 1rem;
+    font-weight: normal;
+}
+
+.footer .footer-box .box p,
+.box h1 {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 0.7rem 0;
+    text-transform: none;
+}
+
+
+.footer .footer-box .box a {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 0.3rem 0;
+    display: block;
+    cursor: pointer;
+    width: max-content;
+}
+
+.footer .footer-box .box a i {
+    padding-right: 1rem;
+}
+
+.footer .footer-box .box a:hover {
+    color: #ffef01d1;
+}
+
+.footer .footer-box .box a:hover i {
+    padding-right: 2.5rem;
+}
+
+.footer .footer-box .box .share {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.footer .footer-box .box .share a {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    transition: 0.2s;
+    background: white;
+    color: #000000;
+    border: none;
+}
+
+.footer .footer-box .box .share a:hover {
+    transform: scale(0.98);
+}
+
+.footer .footer-box .box .share .yt:hover {
+    color: red;
+    border: 2px solid red;
+}
+
+.footer .footer-box .box .share .fb:hover {
+    color: rgb(54, 98, 156);
+    border: 2px solid rgb(54, 98, 156);
+}
+
+.footer .footer-box .box .share .mail:hover {
+    color: rgb(6, 133, 74);
+    border: 2px solid rgb(6, 133, 74);
+}
+
+.footer .footer-box .box .share .tw:hover {
+    color: rgb(2, 210, 238);
+    border: 2px solid rgb(2, 210, 238);
+}
+
+.footer .footer-box .box .share .ig:hover {
+    color: rgb(228, 0, 197);
+    border: 2px solid rgb(228, 0, 197);
+}
+
+.footer .credit {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #eee;
+    border-top: 0.2rem solid #fff3;
+}
+
+.footer .credit>p {
+    margin: 1rem;
+}
+
+.footer .credit a {
+    color: #ffef01d1;
+}
+
+/* footer section ends here */
 
 
 
