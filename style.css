@@ -646,6 +646,12 @@ nav ul li a {
     height: 100%;
 }
 
+.contact-description p {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
 .contact-us-wrapper {
     padding: 4rem;
 }
