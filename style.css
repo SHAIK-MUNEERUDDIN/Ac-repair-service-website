@@ -466,13 +466,24 @@ nav ul li a {
     padding-top: 10rem;
 }
 
-.services-wrapper {
+.services-container {
     width: 100%;
     height: 100%;
     padding: 4rem;
+}
+
+.services-description p {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+.services-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: #F8F8F8;
+    margin-top: 3rem;
 }
 
 .service-card {
