@@ -907,7 +907,6 @@ form .button-area {
     z-index: 9;
 }
 
-
 .testim-heading:after {
     content: ' ';
     position: absolute;
@@ -921,10 +920,6 @@ form .button-area {
     background-repeat: no-repeat;
     background-position: center;
 }
-
-
-
-
 
 .testim .wrap {
     position: relative;
@@ -943,7 +938,7 @@ form .button-area {
     transform: translateY(-50%);
     transition: all 0.3s ease-in-out;
     padding: 5px;
-    z-index: 22222222;
+    z-index: 9;
 }
 
 .testim .arrow:before {
