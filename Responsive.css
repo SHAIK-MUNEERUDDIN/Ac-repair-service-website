@@ -156,6 +156,11 @@
     height: 14rem;
   }
 
+  .slider::before,
+  .slider::after {
+    width: 5rem;
+  }
+
   .slide {
     height: 11rem;
     width: 21rem;
