@@ -19,6 +19,7 @@
     position: fixed;
     width: 100%;
     height: 100vh;
+    padding-top: 3rem;
     background: #2c3e50;
     top: 12rem;
     left: -100%;
@@ -124,11 +125,27 @@
   .ht-timings {
     display: none;
   }
+
+  .testim .dots {
+    bottom: 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   html {
     font-size: 56.25%;
+  }
+
+  .header-top {
+    display: none;
+  }
+
+  nav ul {
+    top: 8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
   }
 }
 
@@ -138,21 +155,34 @@
   .logo {
     font-size: 1.2rem;
   }
-}
 
-@media all and (max-width: 480px) {
-
-  .ht-contact p {
-    display: none;
+  .vision-media img {
+    border-bottom: 1rem solid #ff76e3;
   }
 
   .intro-card-img img {
     width: 32rem;
     height: 42rem;
   }
+
+  .testim .arrow {
+    font-size: 4rem;
+  }
+
+  .footer .box-container .box {
+    margin: 1.5rem;
+  }
+
+  .footer .box-container .box p {
+    padding: 0.7rem;
+  }
+
+  .footer .box-container .box .share a {
+    padding: 1.2rem;
+  }
 }
 
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 500px) {
   .testim .arrow {
     font-size: 1.5em;
   }
@@ -160,4 +190,4 @@
   .testim .cont div p {
     line-height: 25px;
   }
-}
+} */
