@@ -147,6 +147,19 @@
   .hero-content h1 {
     font-size: 3.5rem;
   }
+
+  .brands-wrapper {
+    margin: 3rem 0;
+  }
+
+  .slider {
+    height: 14rem;
+  }
+
+  .slide {
+    height: 11rem;
+    width: 21rem;
+  }
 }
 
 
@@ -169,16 +182,21 @@
     font-size: 4rem;
   }
 
-  .footer .box-container .box {
-    margin: 1.5rem;
+  .testim .arrow.left {
+    left: 1rem;
   }
 
-  .footer .box-container .box p {
-    padding: 0.7rem;
+  .testim .arrow.right {
+    right: 1rem;
   }
 
-  .footer .box-container .box .share a {
-    padding: 1.2rem;
+  .testim .cont div p {
+    font-size: 1.6rem;
+  }
+
+  .footer .credit {
+    font-size: 1.5rem;
+    padding: 1rem;
   }
 }
 
