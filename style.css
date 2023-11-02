@@ -48,6 +48,7 @@ nav {
 
 nav ul {
     display: flex;
+    justify-content: center;
     margin-right: 2rem;
 }
 
@@ -106,22 +107,23 @@ nav ul li a {
     padding: 0 0.5rem;
 }
 
+.ht-contact p {
+    display: inline-block;
+}
+
 .ht-item .phone {
     color: white;
     background-color: green;
-    padding: 4px 10px;
-    border-radius: 15px;
+    padding: 0.5rem;
+    border-radius: 5px;
     cursor: pointer;
+    box-shadow: 3px 3px 10px 0px #807c7c;
 }
 
 .ht-item .phone:hover {
     background-color: red;
 }
 
-.ht-item .mail {
-    font-size: 2rem;
-    background: none;
-}
 
 .appointment-btn {
     color: black;
@@ -209,7 +211,7 @@ nav ul li a {
     overflow: hidden;
 }
 
-.intro-content p {
+.intro-content {
     font-size: 2rem;
     padding: 3rem;
     text-align: justify;
@@ -288,7 +290,6 @@ nav ul li a {
     width: 15rem;
     display: flex;
     align-items: center;
-    /* color: #3e3737; */
     padding: 1rem;
 }
 
@@ -350,6 +351,7 @@ nav ul li a {
     margin-top: 7rem;
     position: relative;
     z-index: 1;
+    gap: 2rem;
 }
 
 /* .vision-container::before {
@@ -396,9 +398,6 @@ nav ul li a {
     flex: 0 0 auto;
     width: 53rem;
     height: 38rem;
-    border-bottom: 1.5rem solid #ff76e3;
-    border-radius: 1rem;
-
 }
 
 
@@ -406,6 +405,8 @@ nav ul li a {
 .vision-media img {
     width: 100%;
     height: 100%;
+    border-bottom: 1.5rem solid #ff76e3;
+    border-radius: 1rem;
 }
 
 
@@ -649,7 +650,7 @@ nav ul li a {
     height: 100%;
 }
 
-.contact-description p {
+.contact-description {
     font-size: 2rem;
     margin-top: 1.5rem;
     text-align: justify;
@@ -670,7 +671,7 @@ nav ul li a {
 
 .contact-card {
     width: 27rem;
-    height: 18rem;
+    height: 19rem;
     padding: 2rem;
     border-radius: 12px;
     font-size: 1rem;
@@ -696,6 +697,10 @@ nav ul li a {
 
 .ph-no {
     color: green;
+}
+
+.card-btn-box {
+    margin-top: 1rem;
 }
 
 .contact-card-btn {
@@ -894,7 +899,6 @@ form .button-area {
     position: relative;
     background: url(./assets/images/expert-air-conditioning-testimonials-bg.jpg);
     padding: 5rem 0;
-    margin: 5rem 0;
     background-position: center;
     background-size: cover;
 }
