@@ -29,6 +29,37 @@ myFunction();
 // Attach the onscroll event to the window
 window.onscroll = function () { myFunction() };
 
+//javascript to make nav link active on click
+function clickSingleA(a) {
+    items = document.querySelectorAll('.nav-link.active');
+    checkbox = document.getElementById("check");
+
+    if (items.length) {
+        items[0].className = '.nav-link';
+        checkbox.checked = false;
+    }
+
+    a.className = 'nav-link active';
+
+}
+
+    window.addEventListener('scroll', function () {
+        var sections = document.querySelectorAll('section');
+        var scrollPosition = window.scrollY + 300; // Adjust the offset as needed
+
+        sections.forEach(function (section) {
+            if (scrollPosition >= section.offsetTop) {
+                var id = section.id;
+                document.querySelectorAll('nav li a').forEach(function (link) {
+                    link.classList.remove('active');
+                });
+                document.querySelectorAll('nav a[href="#' + id + '"]').forEach(function (link) {
+                    link.classList.add('active');
+                });
+            }
+        });
+    });
+
 
 
 
