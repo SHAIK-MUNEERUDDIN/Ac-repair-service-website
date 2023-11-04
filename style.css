@@ -38,11 +38,30 @@ nav {
     animation: 0.95s ease 0s normal forwards 1 running slideDown;
 }
 
-.logo {
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-logo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1.5rem;
+}
+
+.header-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5rem;
+}
+
+.logo-title {
     color: white;
     font-size: 2rem;
     line-height: 80px;
-    padding-left: 2rem;
+    margin-left: 1rem;
     font-weight: bold;
 }
 
@@ -158,7 +177,7 @@ nav ul li a {
 
 #hero-section::before {
     content: "";
-    background: url(/assets/images/ac-repair-banner.jpg);
+    background: url(/assets/images/ac-repair-technician-banner.webp);
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: cover;
@@ -902,10 +921,11 @@ form .button-area {
     min-height: 38rem;
     width: 100%;
     position: relative;
-    background: url(./assets/images/expert-air-conditioning-testimonials-bg.jpg);
+    background: url(./assets/images/expert-air-conditioning-testimonials-bg.webp);
     padding: 5rem 0;
     background-position: center;
     background-size: cover;
+    margin-bottom: 4rem;
 }
 
 .testim-heading {
@@ -1082,6 +1102,20 @@ form .button-area {
     width: 100%;
     height: 30rem;
 }
+
+
+/* .footer-logo {
+    height: 11rem;
+    width: 15rem;
+    margin-right: 1.5rem;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+} */
 
 .footer {
     min-height: auto;
