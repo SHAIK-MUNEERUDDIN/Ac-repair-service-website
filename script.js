@@ -163,26 +163,6 @@ window.onload = function () {
 
   playSlide(currentSlide);
 
-  // keyboard shortcuts
-  document.addEventListener("keyup", function (e) {
-    switch (e.keyCode) {
-      case 37:
-        testimLeftArrow.click();
-        break;
-
-      case 39:
-        testimRightArrow.click();
-        break;
-
-      case 39:
-        testimRightArrow.click();
-        break;
-
-      default:
-        break;
-    }
-  });
-
   testim.addEventListener("touchstart", function (e) {
     touchStartPos = e.changedTouches[0].clientX;
   });
