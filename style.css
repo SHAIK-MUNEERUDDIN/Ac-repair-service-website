@@ -598,6 +598,7 @@ nav ul li a {
 .brands-text {
     font-size: 1.7rem;
     padding: 3rem 0;
+    text-align: justify;
 }
 
 .brands-wrapper {
