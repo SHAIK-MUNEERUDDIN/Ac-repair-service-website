@@ -185,3 +185,35 @@ window.onload = function () {
     }
   });
 };
+
+// JS to record the Data of the bookings from Contact Form to Google Sheet
+
+const orderForm = document.forms['order-form'];
+const allInputs = document.querySelectorAll(".order-ip-field");
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ42YkSQ_FpkTgmcjyTyi8h7BXK9yAQuN_tH0EboWJfdNntMxEcPf4azfAmt-S64SJrQ/exec';
+
+orderForm.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(orderForm), mode: "no-cors" })
+    .then(response =>orderSubmission())
+    .catch(error => alert("Unable to Submit the order, Please try again !"))
+    allInputs.forEach((input) => {
+        input.value = ''
+    })
+})
+
+//js to display order sumbission message
+
+const orderMessage=document.getElementById("order-Submission-msg");
+
+function orderSubmission(){
+    orderMessage.style.display="flex";
+    setTimeout(function() {
+        orderMessage.style.display = "none";
+    }, 10000);
+}
+
+
+function closeMsg(){
+    orderMessage.style.display = "none";
+}
