@@ -164,6 +164,11 @@
     height: 11rem;
     width: 21rem;
   }
+
+  #order-Submission-msg,
+  #new-letter-msg {
+    font-size: 1.5rem;
+  }
 }
 
 

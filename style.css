@@ -1246,6 +1246,29 @@ form .button-area {
 /* footer section ends here */
 
 
+/* order submission styling */
+
+#order-Submission-msg {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem 4rem;
+    background-color: rgb(70, 142, 77);
+    color: white;
+    position: fixed;
+    top: 15%;
+    z-index: 999;
+}
+
+.fa-sharp {
+    margin-left: 2rem;
+    color: red;
+    cursor: pointer;
+}
+
 
 
 

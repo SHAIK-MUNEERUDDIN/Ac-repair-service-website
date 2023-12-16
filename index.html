@@ -984,7 +984,7 @@
                 loading="lazy"
               />
               <p>Call or Text Us</p>
-              <h3 class="ph-no">+91 8106525171</h3>
+              <h3 class="ph-no">+91 6281033855</h3>
             </div>
             <div class="card-btn-box">
               <a class="contact-card-btn" href="tel:6281033855">Call Now</a>
@@ -1020,14 +1020,14 @@
               />
               <h3>Gachibowli, Hyderabad</h3>
             </div>
-            <!-- <div class="card-btn-box">
+            <div class="card-btn-box">
               <a
                 class="contact-card-btn"
-                href="https://maps.app.goo.gl/bVkgwoFraY5RMDJe8"
+                href="https://maps.app.goo.gl/4XF3Z3GgFqCfLmvj7"
                 target="_blank"
                 >Visit Us</a
               >
-            </div> -->
+            </div>
           </div>
 
           <div class="contact-card">
@@ -1062,10 +1062,16 @@
                   loading="lazy"
                 />
               </div>
-              <form id="contact-form" method="post" data-netlify="true">
-                <div class="form-group" m>
+              <form
+                name="order-form"
+                id="contact-form"
+                method="post"
+                data-netlify="true"
+              >
+                <div class="form-group">
                   <div class="field">
                     <input
+                      class="order-ip-field"
                       type="text"
                       name="name"
                       placeholder="Name"
@@ -1075,6 +1081,7 @@
                   </div>
                   <div class="field">
                     <input
+                      class="order-ip-field"
                       type="email"
                       name="email"
                       placeholder="Email"
@@ -1083,7 +1090,12 @@
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                   </div>
                   <div class="field">
-                    <input type="text" name="phone" placeholder="Phone" />
+                    <input
+                      class="order-ip-field"
+                      type="text"
+                      name="phone"
+                      placeholder="Phone"
+                    />
                     <i class="fa fa-phone-square" aria-hidden="true"></i>
                   </div>
                   <div class="field">
@@ -1091,6 +1103,7 @@
                       aria-required="true"
                       aria-invalid="false"
                       name="services"
+                      class="order-ip-field"
                     >
                       <option value="">— Select Services —</option>
                       <option value="AC Installation">AC Installation</option>
@@ -1114,6 +1127,7 @@
                   </div>
                   <div class="message">
                     <textarea
+                      class="order-ip-field"
                       placeholder="Message"
                       name="message"
                       required
@@ -1391,7 +1405,11 @@
               <a href="" class="fa fa-facebook fb" target="_blank"></a>
               <a href="" class="fa fa-envelope mail" target="_blank"></a>
               <a href="" class="fa fa-twitter tw" target="_blank"></a>
-              <a href="" class="fa fa-instagram ig" target="_blank"></a>
+              <a
+                href="https://www.instagram.com/expertairconditioning55/"
+                class="fa fa-instagram ig"
+                target="_blank"
+              ></a>
             </div>
           </div>
         </div>
@@ -1409,6 +1427,14 @@
           </p>
         </div>
       </footer>
+
+      <div id="order-Submission-msg" data-aos="fade-down">
+        <p>
+          Your Order Has Been Placed Successfully ! You Will Get a Confirmation
+          Message by Our Team In a Moment.
+        </p>
+        <i onclick="closeMsg()" class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
     </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
