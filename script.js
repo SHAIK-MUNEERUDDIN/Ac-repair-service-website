@@ -3,9 +3,6 @@ AOS.init({
   duration: 1200,
 });
 
-
-
-
 //javascript to navigate on home section on reload
 window.onload = function () {
   window.setTimeout(function () {
@@ -13,13 +10,9 @@ window.onload = function () {
   }, 10);
 };
 
-
-
-
 const navBar = document.querySelector("nav");
 const checkbox = document.getElementById("check");
 const sticky = navBar.offsetTop;
-
 
 // js Function to stick the nav bar starts
 function myFunction() {
@@ -38,19 +31,11 @@ window.onscroll = function () {
   myFunction();
 };
 
-
-
-
-
 // js function to make body overflow hidden when hamburger menu is opened in tablet or mobile view
 function checkBoxStatus() {
-    document.body.style.overflow = checkbox.checked ? "hidden" : "visible";
+  document.body.style.overflow = checkbox.checked ? "hidden" : "visible";
 }
-checkbox.addEventListener("click", checkBoxStatus); 
-
-
-
-
+checkbox.addEventListener("click", checkBoxStatus);
 
 //javascript to make nav link active on click
 function clickSingleA(a) {
@@ -64,13 +49,7 @@ function clickSingleA(a) {
   a.className = "nav-link active";
 
   checkBoxStatus();
-
 }
-
-
-
-
-
 
 // js to Highlight active section in navbar on scroll
 window.addEventListener("scroll", function () {
@@ -91,11 +70,6 @@ window.addEventListener("scroll", function () {
     }
   });
 });
-
-
-
-
-
 
 // js for slide show of testimonial section
 ("use strict");
@@ -186,34 +160,104 @@ window.onload = function () {
   });
 };
 
-// JS to record the Data of the bookings from Contact Form to Google Sheet
-
-const orderForm = document.forms['order-form'];
-const allInputs = document.querySelectorAll(".order-ip-field");
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ42YkSQ_FpkTgmcjyTyi8h7BXK9yAQuN_tH0EboWJfdNntMxEcPf4azfAmt-S64SJrQ/exec';
-
-orderForm.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(orderForm), mode: "no-cors" })
-    .then(response =>orderSubmission())
-    .catch(error => alert("Unable to Submit the order, Please try again !"))
-    allInputs.forEach((input) => {
-        input.value = ''
-    })
-})
-
 //js to display order sumbission message
 
-const orderMessage=document.getElementById("order-Submission-msg");
+const orderMessage = document.getElementById("order-Submission-msg");
 
-function orderSubmission(){
-    orderMessage.style.display="flex";
-    setTimeout(function() {
-        orderMessage.style.display = "none";
-    }, 10000);
+function orderSubmission() {
+  orderMessage.style.display = "flex";
+  setTimeout(function () {
+    orderMessage.style.display = "none";
+  }, 10000);
 }
 
+function closeMsg() {
+  orderMessage.style.display = "none";
+}
 
-function closeMsg(){
-    orderMessage.style.display = "none";
+//js for submit event listener to the contact form
+
+function contactInfoSubmission() {
+  // Validate the form fields
+  if (validateForm()) {
+    // If validation passes, submit the form to record the Data of the bookings from Contact Form to Google Sheet
+
+    const orderForm = document.forms["order-form"];
+    const allInputs = document.querySelectorAll(".order-ip-field");
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyJ42YkSQ_FpkTgmcjyTyi8h7BXK9yAQuN_tH0EboWJfdNntMxEcPf4azfAmt-S64SJrQ/exec";
+
+    orderForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(orderForm),
+        mode: "no-cors",
+      })
+        .then((response) => orderSubmission())
+        .catch((error) =>
+          alert("Unable to Submit the order, Please try again !")
+        );
+      allInputs.forEach((input) => {
+        input.value = "";
+      });
+    });
+  } else {
+    event.preventDefault();
+  }
+}
+
+//js to validate the contact form
+function validateForm() {
+  // Get form elements
+  var nameInput = document.forms["order-form"]["name"];
+  var emailInput = document.forms["order-form"]["email"];
+  var phoneInput = document.forms["order-form"]["phone"];
+  var servicesInput = document.forms["order-form"]["services"];
+  var messageInput = document.forms["order-form"]["message"];
+
+  // Validate Name
+  if (nameInput.value.trim() === "") {
+    alert("Please enter your name.");
+    nameInput.focus();
+    return false;
+  }
+
+  // Validate Email
+  var email = emailInput.value.trim();
+  const validateEmail = (email) => {
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
+
+  if (!validateEmail(email)) {
+    alert("Please enter a valid email address.");
+    emailInput.focus();
+    return false;
+  }
+
+  // Validate Phone
+  if (phoneInput.value === "" || phoneInput.value.length !== 10) {
+    alert("Please enter a valid phone number.");
+    phoneInput.focus();
+    return false;
+  }
+
+  // Validate Services
+  if (servicesInput.value === "") {
+    alert("Please select a service.");
+    servicesInput.focus();
+    return false;
+  }
+
+  // Validate Message
+  if (messageInput.value.trim() === "") {
+    alert("Please enter your message.");
+    messageInput.focus();
+    return false;
+  }
+
+  // If all validations pass, return true
+  return true;
 }
